@@ -1,0 +1,51 @@
+<!-- 
+Static HTML file 
+
+Your page should have a few basic user interface elements:
+-A header tag, with an h1 naming your site, with a title for your page
+-A footer with your name, student ID, and any other info about yourself you wish to include
+-An empty unordered list with an id of showList that is initially hidden.  
+-A div with an id of show that is initially hidden.
+-A form with an id of searchForm.
+-A text input with an id of search_term.
+-A label with a for attribute referencing your input
+-A button to submit the form
+-A link that links back to the "/" route with the text "Back to All Shows" and that has an id of homeLink 
+  -This link will initially be hidden
+  -It will ONLY be displayed when the show element is being displayed or ONLY when a search is performed and search results are being displayed
+  -You should NOT show this link on the initial show list
+  -This link will simply trigger a reload of the page, which then will display the initial list of shows
+ -->
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Show Finder</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+  <header>
+    <h1>TV Show Finder</h1>
+  </header>
+  
+  <form id="searchForm">
+    <label for="search_term">Search Term:</label>
+    <input type="text" id="search_term" name="search_term">
+    <button type="submit">Search</button>
+  </form>
+  
+  <ul id="showList" style="display: none;"></ul>
+  <div id="show" style="display: none;"></div>
+  
+  <a id="homeLink" href="/" style="display: none;">Back to All Shows</a>
+  
+  <footer>
+    <p>Sriya, [Student ID], [any other info]</p>
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/main.js"></script>
+</body>
+</html>

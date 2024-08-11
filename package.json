@@ -1,0 +1,16 @@
+{
+  "name": "lab-11---Sriya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "path": "^0.12.7"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
